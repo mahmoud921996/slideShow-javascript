@@ -1,0 +1,93 @@
+.slideshow-container {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.myslides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-transition: 0.6s ease;
+  -moz-transition: 0.6s ease;
+  -ms-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  padding: 8px 12px;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background-color: #bbb;
+  display: inline-block;
+  margin: 0 2px;
+  transition: background-color 0.6s ease;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation: fade 1.5s;
+  -webkit-animation: fade 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
